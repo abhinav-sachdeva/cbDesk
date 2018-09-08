@@ -1,4 +1,7 @@
-body{-webkit-app-region: drag}
+body{
+    -webkit-app-region: drag;
+    border:2px solid #000;
+}
 .titlebar {
     -webkit-user-select: none;
     -webkit-app-region: drag;

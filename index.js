@@ -23,6 +23,7 @@ app.on('ready', () => {
         y:150,
         backgroundColor :"#fff"
     });
+    mainWindow.webContents.openDevTools();
     // Load html in window
     mainWindow.loadURL(url.format({
       pathname: path.join(__dirname, 'mainWindow.html'),

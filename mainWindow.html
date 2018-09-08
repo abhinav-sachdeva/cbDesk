@@ -4,14 +4,39 @@
   <title>Chatbot</title>
   <link rel="stylesheet" href="assets/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/custom.css">
-
-
+  <script>
+    if (typeof module === 'object') {
+      window.module = module; module = undefined;
+  }
+  </script>
+  <!-- <script src="assets/vendor/jQuery-3.2.1.js"></script> -->
+  <script>
+    function toggle(ctx){
+      console.log(ctx)
+      document.getElementById('main').classList.remove('hide');
+    }
+  </script>
 </head>
 <body>
-  <nav>
-    <div class="nav-wrapper">
+  
+  <div id="main" class="hide">
+    <nav>
+    <div class="nav-wrapper blue-grey lighten-2">
       <a class="brand-logo center">Chatbot</a>   
     </div>
   </nav>
+  <ul class="collection">
+    <li class="collection-item">Alvin</li>
+    <li class="collection-item">Alvin</li>
+    <li class="collection-item">Alvin</li>
+    <li class="collection-item">Alvin</li>
+  </ul>
+  </div>
+  <div id="x" style="-webkit-app-region: no-drag" onclick="toggle(this)">SHOW</div>
+  <script>
+    // $("#x").click(function(){
+    //   alert("-------")
+    // })
+  </script>
 </body>
 </html>
