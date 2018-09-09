@@ -11,6 +11,8 @@
   </script>
   <!-- <script src="assets/vendor/jQuery-3.2.1.js"></script> -->
   <script>
+    e = require("electron")
+    console.log(e);
     function toggle(ctx){
       console.log(ctx)
       document.getElementById('main').classList.remove('hide');
@@ -32,7 +34,11 @@
     <li class="collection-item">Alvin</li>
   </ul>
   </div>
-  <div id="x" style="-webkit-app-region: no-drag" onclick="toggle(this)">SHOW</div>
+  <div id="launcher-wrap" class="pulse">
+    <div id="launcher" style="-webkit-app-region: no-drag" onclick="toggle(this)">
+      <img src="assets/img/msg_icon.png"/>
+    </div>
+  </div>
   <script>
     // $("#x").click(function(){
     //   alert("-------")

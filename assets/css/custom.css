@@ -6,3 +6,27 @@ body{
     -webkit-user-select: none;
     -webkit-app-region: drag;
 }
+/* #launcher{
+    background-image: url("../img/msg_icon.png");
+    background-position: center;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    /* width: 50px;
+    height:50px; 
+    padding-bottom:50px;
+    background-color: aliceblue
+} */
+#launcher-wrap{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(226, 29, 85, 0.29);
+    padding:40px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+#launcher{
+    text-align: center;
+}
+#launcher img{
+    width:100%;
+}

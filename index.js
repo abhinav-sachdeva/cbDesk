@@ -15,13 +15,14 @@ app.on('ready', () => {
     mainWindow = new BrowserWindow({
         transparent: true,
         frame: false,
-        alwaysOnTop:true,
-        skipTaskbar :true,
+        // alwaysOnTop:true,
+        // skipTaskbar :true,
         width: 400, height: 500,
-        resizable :false,
+        // resizable :false,
         x:electron.screen.getPrimaryDisplay().size.width-400,
         y:150,
-        backgroundColor :"#fff"
+        transparent: true,
+        // backgroundColor :"#fff"
     });
     mainWindow.webContents.openDevTools();
     // Load html in window
